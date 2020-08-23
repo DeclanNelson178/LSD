@@ -1,82 +1,95 @@
 {
   "courses": [
     {
-      "id": "APPH 1050",
+      "id": "apph1050",
       "name": "Health and Witness",
       "credits": 2,
-      "prereqs": ""
+      "prereqs": "",
+      "multi": [{"id": "engl1101", "name": "English Composition 1", "credits": 3, "prereqs": ""}]
     },
     {
-      "id": "engl1001",
+      "id": "engl1101",
       "name": "English Composition 1",
       "credits": 3,
-      "prereqs": ""
+      "prereqs": "",
+      "multi":[]
     },
     {
       "id": "engl1102",
       "name": "English Composition II",
       "credits": 3,
-      "prereqs": "engl1101"
+      "prereqs": "engl1101",
+      "multi":[]
     },
     {
       "id": "cs1301",
       "name": "Introduction to Computing",
       "credits": 3,
-      "prereqs": ""
+      "prereqs": "",
+      "multi":[]
     },
     {
         "id": "cs1331",
         "name": "Introduction to Object Oriented Programming",
         "credits": 3,
-        "prereqs": "cs1301"
+        "prereqs": "cs1301",
+        "multi":[]
     },
     {
         "id": "cs1332",
         "name": "Data Structures and Algorithms for Applications",
         "credits": 3,
-        "prereqs": "cs1331"
+        "prereqs": "cs1331",
+        "multi":[]
     },
     {
         "id": "cs2050",
         "name": "Introduction to Discrete Mathematics for Computer Science",
         "credits": 3,
-        "prereqs": ""
+        "prereqs": "",
+        "multi":[]
     },
     {
         "id": "cs2340",
         "name": "Objects and Design",
         "credits": 3,
-        "prereqs": "cs1332"
+        "prereqs": "cs1332",
+        "multi":[]
     },
     {
         "id": "cs4001",
         "name": "Computing, Society, and Professionalism",
         "credits": 3,
-        "prereqs": ""
+        "prereqs": "",
+        "multi":[]
     },
     {
       "id": "cs3510",
       "name": "Design and Analysis of Algorithms",
       "credits": 3,
-      "prereqs": "(cs2050+cs2051)*(cs1332+math3012+math3022+math2106)"
+      "prereqs": "(cs2050+cs2051)*(cs1332+math3012+math3022+math2106)",
+      "multi":[]
     },
     {
         "id": "cs4510",
         "name": "Automata and Complexity",
         "credits": 3,
-        "prereqs": "(cs3510+cs3511)*(math3012+math3022)*(math3215+math3225+math3770+math3670+cee3770+isye3770*(isye2027*isye2028))+(math3235)"
+        "prereqs": "(cs3510+cs3511)*(math3012+math3022)*(math3215+math3225+math3770+math3670+cee3770+isye3770*(isye2027*isye2028))+(math3235)",
+        "multi":[]
     },
     {
       "id": "cs3600",
       "name": "Introduction to Artificial Intelligence",
       "credits": 3,
-      "prereqs": "cs1332"
+      "prereqs": "cs1332",
+      "multi":[]
     },
     {
         "id": "cs3630",
         "name": "Introduction to Perception and Robotics",
         "credits": 3,
-        "prereqs": "cs1332"
+        "prereqs": "cs1332",
+        "multi":[]
     }
 
   ] 

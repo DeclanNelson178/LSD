@@ -1,0 +1,47 @@
+"courses": [
+	{
+		"name": "Wellness",
+		"courses": ["apph1040/apph1050"]
+	},
+	{
+		"name": "Core A- Essential Skills",
+		"courses": ["engl1101", "engl1102", "math1552"]
+	},
+	{
+		"name": "Core B- Institutional Options",
+		"courses": ["cs1301"]
+	},
+	{
+		"name": "Core C- Humanities",
+		"courses": ["hum1", "hum2"]
+	},
+	{
+		"name": "Core D- Science, Math, and Technology",
+		"courses": ["phys2211", "lab1", "math1551", "math1554/1564"]
+	},
+	{
+		"name": "Core E- Social Sciences",
+		"courses": ["hist2111/hist2112/inta1200/pol1101/pubp3000", "psyc1101", "ss1", "ss2"]
+	},
+	{
+		"name": "Core F- Courses Related to Major",
+		"courses": ["lab2", "CS 1100", "cs1331", "cs1332", "cs2050/2051", "math2550"]
+	},
+	{
+		"name": "Major Requirements",
+		"courses": ["cs2340", "cs4001/cs4002/cs4726/sls3110"]
+	},
+	{
+		"name": "Junior Design Options",
+		"courses": ["jd1", "jd2"]
+	},
+	{
+		"name": "Concentration",
+		"courses": ["cs2110", "cs3510/cs3511", "cs3600", "cs4510", "cs4540", "math3406", "math4022/math4032/math4150", "cs3630/cs3790/psyc3040", "cs4476/cs4635/cs4641/cs4646/cs4649/cs4650/cs4731"]
+	},
+	{
+		"name": "Other",
+		"courses": ["math3012", "math3215/math3670/cee3770/isye3770/isye2027/isye2028"]
+	},
+
+]

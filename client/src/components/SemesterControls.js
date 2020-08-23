@@ -7,6 +7,9 @@ import Select from '@material-ui/core/Select'
 import Input from '@material-ui/core/Input'
 import MenuItem from '@material-ui/core/MenuItem'
 
+import { connect } from 'react-redux'
+import { addSem, remSem, sellThread} from '../redux/actions/index'
+
 // Generate Order Data
 function createData(id, name, credits) {
   return { id, name, credits };
@@ -38,15 +41,30 @@ const threads = [
   "Infonetworks"
 ]
 
-export default function SemesterControls() {
-  const classes = useStyles();
-  const [values] = React.useState([])
+const mapStateToProps = state => {
+  return { sems: state.sems }
+}
 
+const mapDispatchToProps = dispatch => {
+  return {
+    addSem: () => dispatch(addSem()),
+    remSem: () => dispatch(remSem()),
+    selThread: (threads) => dispatch(sellThread())
+  }
+}
+
+const ConnectedSemesterControls = (props) => {
+  const classes = useStyles();
+  const [values, setValues] = React.useState([])
+  const threadClicked = () => {
+    console.log('Thread clicked')
+    setValues(['test'])
+  }
   return (
     <React.Fragment>
       <FormControl className={classes.formControl}>
         <InputLabel htmlFor="threads-simple">Threads</InputLabel>
-        <Select id="threads-multi" multiple input={<Input />} value={values}>
+        <Select onChange={threadClicked} id="threads-multi" multiple input={<Input />} value={values}>
           {threads.map(thread => (
             <MenuItem key={thread} value={thread}>
               {thread}
@@ -54,8 +72,13 @@ export default function SemesterControls() {
           ))}
         </Select>
       </FormControl>
-      <Button color="primary" variant="contained">Add Semester</Button>
-      <Button color="secondary" variant="contained">Remove Semester</Button>
+      <Button color="primary" variant="contained" onClick={props.addSem}>Add Semester</Button>
+      <Button color="secondary" variant="contained" onClick={props.remSem}>Remove Semester</Button>
+          <h3>Number of Semesters: {props.sems.length} </h3>
     </React.Fragment>
   );
 }
+
+const SemesterControls = connect(mapStateToProps, mapDispatchToProps)(ConnectedSemesterControls)
+
+export default SemesterControls

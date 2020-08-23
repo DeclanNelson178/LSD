@@ -18,8 +18,8 @@ import Link from '@material-ui/core/Link';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import ListSubheader from '@material-ui/core/ListSubheader'
 
-import { availCourses, resCourses } from './listItems';
-import SemesterList from './semesterList';
+import CourseList from './CourseList'
+import SemesterList from './semesters/semesterList';
 import SemesterControls from './SemesterControls';
 
 function Copyright() {
@@ -116,15 +116,9 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Dashboard() {
+const Dashboard = () => {
   const classes = useStyles();
   const [open, setOpen] = React.useState(true);
-  const handleDrawerOpen = () => {
-    setOpen(true);
-  };
-  const handleDrawerClose = () => {
-    setOpen(false);
-  };
   const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
 
   return (
@@ -150,13 +144,8 @@ export default function Dashboard() {
         }}
       >
         <Divider />
-        <ListSubheader>Available Courses</ListSubheader>
-        <List>{availCourses}</List>
-        <Divider />
-        <ListSubheader>Restrictied Courses</ListSubheader>
-        <List>{resCourses}</List>
+        <CourseList />
       </Drawer>
-
       <main className={classes.content}>
         <div className={classes.appBarSpacer} />
         <Container maxWidth="lg" className={classes.container}>
@@ -184,3 +173,5 @@ export default function Dashboard() {
     </div>
   );
 }
+
+export default Dashboard
