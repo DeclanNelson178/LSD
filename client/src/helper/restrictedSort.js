@@ -1,20 +1,17 @@
-export function resSort(avail, res, taken) {
-  // combine avail and res classes into a single array
-  const courses = avail.concat(res)
-  console.log(courses)
-  avail = []
-  res = []
-  // comb through array checking if each class has prereqs in taken
-  // if true: add to avail, else: add to res
-  courses.forEach(c => {
-    if (c.prereqs.length === 0) {
-      avail.push(c)
-    }
-    else if (checkPrereqs(c.prereqs, taken)) {
-      avail.push(c)
-    } else {
-      res.push(c)
-    }
+export function resSort(taken, courses, totalCourses) {
+  const avail = []
+  const res = []
+  courses.forEach(sec => {
+    sec.courses.forEach(c => {
+      c = c.split('/')[0]
+      c = totalCourses.find(course => course.id === c)
+      console.log(c)
+      if (checkPrereqs(c.prereqs, taken)) {
+        avail.push(c)
+      } else {
+        res.push(c)
+      }
+    })
   })
 
   return { avail, res }
@@ -23,6 +20,9 @@ export function resSort(avail, res, taken) {
 }
 
 const checkPrereqs = (prereqs, taken) => {
+  if (prereqs.length === 0) {
+    return true
+  }
   var i = 0
   while (i < prereqs.length) {
       var j = i

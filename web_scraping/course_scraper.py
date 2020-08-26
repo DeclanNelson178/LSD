@@ -32,18 +32,6 @@ for x in t:
 # 2. scrape course catalogue
 # 3. scrape course pre-reqs
 # currently trying to scrape entire thread to generate every class needed
-courses: {[
-	{
-		"name": "Wellness",
-		"number": 2,
-		"courses": ["apph1040/apph1050"]
-	},
-	{
-		"name": "Core A- Essential Skills",
-		"number": 2,
-		"courses": ["apph1040/apph1050"]
-	}
-]}
 
 # bs4 notes
 # 4 elements of soup

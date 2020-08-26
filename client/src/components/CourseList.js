@@ -5,22 +5,28 @@ import Select from '@material-ui/core/Select'
 import MenuItem from '@material-ui/core/MenuItem'
 import { connect } from 'react-redux'
 import { List, Divider, ListSubheader } from '@material-ui/core';
-import { addCourse } from '../redux/actions/index'
+import { addCourse, addTakenPrev } from '../redux/actions/index'
 
 const mapStateToProps = state => {
-  return { avail: state.avail, taken: state.taken, res: state.res }
+  return { avail: state.avail, taken: state.taken, res: state.res, courses: state.courses, sel: state.selSem }
 }
 
 const mapDispatchToProps = dispatch => {
   return {
-    addCourse: course => dispatch(addCourse(course))
+    addCourse: course => dispatch(addCourse(course)),
+    addTakenPrev: c => dispatch(addTakenPrev(c))
   }
 }
 
-const ConnectedCourseList = ({ avail, taken, res, addCourse }) => {
+const ConnectedCourseList = ({ avail, taken, res, courses, addCourse, sel, addTakenPrev }) => {
 
   const courseClick = (c) => {
-    addCourse(c)
+    if (sel === 0) {
+      console.log('Trying to add a course to taken dump')
+      addTakenPrev(c)
+    } else {
+      addCourse(c)
+    }
   }
 
   const alphaSort = (a, b) => {
@@ -30,24 +36,20 @@ const ConnectedCourseList = ({ avail, taken, res, addCourse }) => {
   return (
     <React.Fragment>
       <List>
-        <ListSubheader>Available Courses</ListSubheader>
-        {avail.sort(alphaSort).map(c => {
-          if (c.multi.length === 0) {
-            return <ListItem key={c.id} onClick={(e) => courseClick(c, e)} button><ListItemText primary={c.id.toUpperCase() + ': '  + c.name} /></ListItem>
-          } else {
-            return (<ListItem button><ListItemText primary={'Multi Course Option'} />
-            </ListItem>)
-          }
-        })}
-        <Divider></Divider>
-        <ListSubheader>Restricted</ListSubheader>
-        {res.sort(alphaSort).map(c => {  
-          return <ListItem key={c.id}><ListItemText primary={c.id.toUpperCase() + ': '  + c.name} style={{"color":"grey"}}/></ListItem>
-        })}
-        <Divider></Divider>
-        <ListSubheader>Taken</ListSubheader>
-        {taken.sort(alphaSort).map(c => {
-          return <ListItem key={c.id}><ListItemText primary={c.id.toUpperCase() + ': '  + c.name} style={{"color":"grey"}}/></ListItem>
+        {courses.map(section => {
+          return (<>
+            <Divider></Divider>
+            <ListSubheader>{section.name}</ListSubheader>
+            {section.courses.map(c => {
+              if (res.some(course => course.id === c.split('/')[0])) {
+                return <ListItem key={c}><ListItemText primary={c} style={{"color":"red"}}></ListItemText></ListItem>
+              } else if (taken.some(course => course.id === c.split('/')[0])) {
+                return <ListItem key={c}><ListItemText primary={c} style={{"color":"grey"}}></ListItemText></ListItem>
+              } else {
+                return <ListItem key={c} onClick={(e) =>courseClick(c)} button><ListItemText primary={c}></ListItemText></ListItem>
+              }
+            })}
+            </>)
         })}
       </List>
     </React.Fragment>

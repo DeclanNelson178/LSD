@@ -1,5 +1,6 @@
 import React from 'react'
 import Semester from './Semester'
+import Taken from './Taken'
 import { connect } from 'react-redux'
 
 const mapStateToProps = state => {
@@ -9,8 +10,9 @@ const mapStateToProps = state => {
 const ConnectedSemesterList = ({ sems }) => {
     return (
         <React.Fragment>
+            <Taken num={0}></Taken>
             {sems.map((item, i) => {
-                return <Semester key={i} num={i + 1} />
+                return <Semester key={i} num={i+1} />
             })}
         </React.Fragment>
     )

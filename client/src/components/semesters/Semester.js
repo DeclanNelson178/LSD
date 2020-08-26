@@ -49,7 +49,6 @@ const ConnectedSemester = (props) => {
   }
 
   const delClick = (c) => {
-    console.log(delClick)
     const course = props.sems[props.num-1].courses.find(val => val.id === c.id)
     console.log(course)
     props.remCourse({course: course, num: props.num})

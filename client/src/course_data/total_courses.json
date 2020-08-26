@@ -1,0 +1,866 @@
+{
+  "totalCourses": [{
+    "id": "cs1100",
+    "name": "Freshman Leap Seminar",
+    "credits": "1",
+    "prereqs": ""
+  },
+  {
+    "id": "cs1171",
+    "name": "Computing in MATLAB",
+    "credits": "1",
+    "prereqs": "cs1301+cs15XX+cs13X1+cs1315"
+  },
+  {
+    "id": "cs1301",
+    "name": "Intro to Computing",
+    "credits": "3",
+    "prereqs": ""
+  },
+  {
+    "id": "cs1315",
+    "name": "Intro Media Computation",
+    "credits": "3",
+    "prereqs": ""
+  },
+  {
+    "id": "cs1316",
+    "name": "Rep Structure & Behavior",
+    "credits": "3",
+    "prereqs": "cs1301+cs1315+cs1371"
+  },
+  {
+    "id": "cs1331",
+    "name": "Intro",
+    "credits": "3",
+    "prereqs": "cs1301+cs1315+cs1321+cs1371"
+  },
+  {
+    "id": "cs1332",
+    "name": "Data Struct & Algorithms",
+    "credits": "3",
+    "prereqs": "cs1322+cs1331"
+  },
+  {
+    "name": "ERROR",
+    "credits": "ERROR",
+    "prereqs": ""
+  },
+  {
+    "id": "cs1801",
+    "name": "Special Topics",
+    "credits": "1",
+    "prereqs": ""
+  },
+  {
+    "id": "cs1802",
+    "name": "Special Topics",
+    "credits": "2",
+    "prereqs": ""
+  },
+  {
+    "id": "cs1803",
+    "name": "Special Topics",
+    "credits": "3",
+    "prereqs": ""
+  },
+  {
+    "id": "cs1804",
+    "name": "Special Topics",
+    "credits": "4",
+    "prereqs": ""
+  },
+  {
+    "id": "cs1805",
+    "name": "Special Topics",
+    "credits": "5",
+    "prereqs": ""
+  },
+  {
+    "id": "cs1xxx",
+    "name": "Computer Sci Elective",
+    "credits": "1",
+    "prereqs": ""
+  },
+  {
+    "id": "cs2050",
+    "name": "Intro Discrete Math CS",
+    "credits": "3",
+    "prereqs": ""
+  },
+  {
+    "id": "cs2051",
+    "name": "Honors Discrete Math CS",
+    "credits": "3",
+    "prereqs": ""
+  },
+  {
+    "id": "cs2110",
+    "name": "Computer Organiz&Program",
+    "credits": "0",
+    "prereqs": "cs1331"
+  },
+  {
+    "id": "cs2200",
+    "name": "Systems and Networks",
+    "credits": "0",
+    "prereqs": "cs2110+(ece2020*ece2035)"
+  },
+  {
+    "id": "cs2261",
+    "name": "Media Device Architectur",
+    "credits": "0",
+    "prereqs": "cs1331"
+  },
+  {
+    "id": "cs2316",
+    "name": "Data Input/Manipulation",
+    "credits": "3",
+    "prereqs": "cs1371+cs1301+cs1315"
+  },
+  {
+    "id": "cs2335",
+    "name": "Software Practicum",
+    "credits": "0",
+    "prereqs": "cs1332"
+  },
+  {
+    "id": "cs2340",
+    "name": "Objects and Design",
+    "credits": "3",
+    "prereqs": "cs1331+cs1372+cs1316"
+  },
+  {
+    "id": "cs2345",
+    "name": "Adv Practical O",
+    "credits": "0",
+    "prereqs": "cs2340*((cs2110+cs2261)+(ece2020*ece2035))"
+  },
+  {
+    "id": "cs2600",
+    "name": "Knowledge Rep & Process",
+    "credits": "0",
+    "prereqs": "cs1301+cs1315+cs1371"
+  },
+  {
+    "id": "cs2698",
+    "name": "Research Assistantship",
+    "credits": "1",
+    "prereqs": "\u2265101"
+  },
+  {
+    "id": "cs2699",
+    "name": "Undergraduate Research",
+    "credits": "1",
+    "prereqs": "\u2265101"
+  },
+  {
+    "id": "cs2701",
+    "name": "Startup Lab",
+    "credits": "3",
+    "prereqs": ""
+  },
+  {
+    "id": "cs2801",
+    "name": "Special Topics",
+    "credits": "1",
+    "prereqs": ""
+  },
+  {
+    "id": "cs2802",
+    "name": "Special Topics",
+    "credits": "2",
+    "prereqs": ""
+  },
+  {
+    "id": "cs2803",
+    "name": "Special Topics",
+    "credits": "3",
+    "prereqs": ""
+  },
+  {
+    "id": "cs2804",
+    "name": "Special Topics",
+    "credits": "4",
+    "prereqs": ""
+  },
+  {
+    "id": "cs2805",
+    "name": "Special Topics",
+    "credits": "5",
+    "prereqs": ""
+  },
+  {
+    "id": "cs2xxx",
+    "name": "Computer Sci Elective",
+    "credits": "1",
+    "prereqs": ""
+  },
+  {
+    "id": "cs3101",
+    "name": "Comp Sci Ventures",
+    "credits": "3",
+    "prereqs": "cs1301+cs1315+cs1371"
+  },
+  {
+    "id": "cs3210",
+    "name": "Design",
+    "credits": "3",
+    "prereqs": "cs2200+ece3057"
+  },
+  {
+    "id": "cs3220",
+    "name": "Processor Design",
+    "credits": "3",
+    "prereqs": "cs2200*ece2031+ece3057"
+  },
+  {
+    "id": "cs3240",
+    "name": "Languages and Computation",
+    "credits": "3",
+    "prereqs": "cs2340"
+  },
+  {
+    "id": "cs3251",
+    "name": "Computer Networking I",
+    "credits": "3",
+    "prereqs": "cs2200+math3235+ece3057"
+  },
+  {
+    "id": "cs3300",
+    "name": "Intro to Software Engr",
+    "credits": "3",
+    "prereqs": "cs2340"
+  },
+  {
+    "id": "cs3311",
+    "name": "Project Design",
+    "credits": "1",
+    "prereqs": "cs2340"
+  },
+  {
+    "id": "cs3312",
+    "name": "Project Implementation",
+    "credits": "2",
+    "prereqs": "cs2340*lmc3432"
+  },
+  {
+    "id": "cs3451",
+    "name": "Computer Graphics",
+    "credits": "3",
+    "prereqs": "(math2605+math2401+math2411+math24X1+math2551+math2550+math2561)*((cs2110+cs2261)+(ece2020*ece2035))*(cs1332*cs2340)"
+  },
+  {
+    "id": "cs3510",
+    "name": "Dsgn&Analysis",
+    "credits": "3",
+    "prereqs": "(cs2050+cs2051)*(cs1332+math3012+math3022)+math2106"
+  },
+  {
+    "id": "cs3511",
+    "name": "Algorithms Honors",
+    "credits": "3",
+    "prereqs": "(cs2050+cs2051)*(cs1332+math3012+math3022)+math2106"
+  },
+  {
+    "id": "cs3600",
+    "name": "Intro",
+    "credits": "3",
+    "prereqs": "cs1332"
+  },
+  {
+    "id": "cs3630",
+    "name": "Intro",
+    "credits": "3",
+    "prereqs": "cs1332"
+  },
+  {
+    "id": "cs3651",
+    "name": "Prototyping Devices",
+    "credits": "0",
+    "prereqs": "ece2031"
+  },
+  {
+    "id": "cs3743",
+    "name": "Emerging Technologies",
+    "credits": "3",
+    "prereqs": ""
+  },
+  {
+    "id": "cs3744",
+    "name": "Mangn Prod Serv Tech Dev",
+    "credits": "3",
+    "prereqs": ""
+  },
+  {
+    "id": "cs3750",
+    "name": "User Interface Design",
+    "credits": "3",
+    "prereqs": "("
+  },
+  {
+    "id": "cs3790",
+    "name": "Intro",
+    "credits": "3",
+    "prereqs": "("
+  },
+  {
+    "id": "cs3801",
+    "name": "Special Topics",
+    "credits": "1",
+    "prereqs": ""
+  },
+  {
+    "id": "cs3802",
+    "name": "Special Topics",
+    "credits": "2",
+    "prereqs": ""
+  },
+  {
+    "id": "cs3803",
+    "name": "Special Topics",
+    "credits": "3",
+    "prereqs": ""
+  },
+  {
+    "id": "cs3804",
+    "name": "Special Topics",
+    "credits": "4",
+    "prereqs": ""
+  },
+  {
+    "id": "cs3805",
+    "name": "Special Topics",
+    "credits": "5",
+    "prereqs": ""
+  },
+  {
+    "id": "cs3873",
+    "name": "Special Topics",
+    "credits": "0",
+    "prereqs": ""
+  },
+  {
+    "id": "cs3xxx",
+    "name": "Computer Sci",
+    "credits": "1",
+    "prereqs": ""
+  },
+  {
+    "id": "cs4001",
+    "name": "Computing & Society",
+    "credits": "3",
+    "prereqs": ""
+  },
+  {
+    "id": "cs4002",
+    "name": "Robots and Society",
+    "credits": "3",
+    "prereqs": ""
+  },
+  {
+    "id": "cs4005",
+    "name": "Next Gen Computing Tech",
+    "credits": "3",
+    "prereqs": "cs2316"
+  },
+  {
+    "id": "cs4010",
+    "name": "Intro to Computer Law",
+    "credits": "3",
+    "prereqs": ""
+  },
+  {
+    "id": "cs4052",
+    "name": "Systems Analysis& Design",
+    "credits": "3",
+    "prereqs": ""
+  },
+  {
+    "id": "cs4057",
+    "name": "Bus Process Analy&Design",
+    "credits": "3",
+    "prereqs": "mgt2200"
+  },
+  {
+    "id": "cs4210",
+    "name": "Adv Operating Systems",
+    "credits": "3",
+    "prereqs": "cs3210"
+  },
+  {
+    "id": "cs4220",
+    "name": "Embedded Systems",
+    "credits": "3",
+    "prereqs": "cs2200+ece3057"
+  },
+  {
+    "id": "cs4233",
+    "name": "Parallel Comp Arch",
+    "credits": "3",
+    "prereqs": "cs3210"
+  },
+  {
+    "id": "cs4235",
+    "name": "Intro to Info Security",
+    "credits": "3",
+    "prereqs": "cs2200+ece3057"
+  },
+  {
+    "id": "cs4237",
+    "name": "Comp & Network Security",
+    "credits": "3",
+    "prereqs": "cs3251"
+  },
+  {
+    "id": "cs4240",
+    "name": "Compilers & Interpreters",
+    "credits": "3",
+    "prereqs": "cs2340"
+  },
+  {
+    "id": "cs4245",
+    "name": "Intro Data Mining & Anal",
+    "credits": "3",
+    "prereqs": "(math2605+math2401+math2411+math24X1)*(cs1332+cs1372)"
+  },
+  {
+    "id": "cs4251",
+    "name": "Computer Networking II",
+    "credits": "3",
+    "prereqs": "cs3251"
+  },
+  {
+    "id": "cs4255",
+    "name": "Intro",
+    "credits": "3",
+    "prereqs": "cs3251"
+  },
+  {
+    "id": "cs4260",
+    "name": "Telecommunications Sys",
+    "credits": "3",
+    "prereqs": "(math3215+math3225+math3770+isye3770+cee3770+isye2028+math3670)*cs2200"
+  },
+  {
+    "id": "cs4261",
+    "name": "Mobile Apps & Svcs",
+    "credits": "3",
+    "prereqs": "cs2200+ece3057"
+  },
+  {
+    "id": "cs4270",
+    "name": "Data Communications Lab",
+    "credits": "0",
+    "prereqs": "cs3251"
+  },
+  {
+    "id": "cs4280",
+    "name": "Survey",
+    "credits": "3",
+    "prereqs": ""
+  },
+  {
+    "id": "cs4290",
+    "name": "Advanced Computer Org",
+    "credits": "3",
+    "prereqs": "cs2200+econ3057"
+  },
+  {
+    "id": "cs4320",
+    "name": "Software Processes",
+    "credits": "3",
+    "prereqs": "cs3300"
+  },
+  {
+    "id": "cs4330",
+    "name": "Software Applications",
+    "credits": "0",
+    "prereqs": "cs3300"
+  },
+  {
+    "id": "cs4342",
+    "name": "Software Generation",
+    "credits": "3",
+    "prereqs": "cs3300"
+  },
+  {
+    "id": "cs4365",
+    "name": "Intro Enterprise Comp",
+    "credits": "3",
+    "prereqs": "cs3210+cs4400"
+  },
+  {
+    "id": "cs4392",
+    "name": "Programming Languages",
+    "credits": "3",
+    "prereqs": "cs2340"
+  },
+  {
+    "id": "cs4400",
+    "name": "Intr to Database Systems",
+    "credits": "3",
+    "prereqs": "cs1301+cs1315+cs1371"
+  },
+  {
+    "id": "cs4420",
+    "name": "Database Sys Implement",
+    "credits": "3",
+    "prereqs": "cs4400"
+  },
+  {
+    "id": "cs4432",
+    "name": "Information Systems Dsgn",
+    "credits": "0",
+    "prereqs": "cs3300*cs4400"
+  },
+  {
+    "id": "cs4440",
+    "name": "Database Technologies",
+    "credits": "3",
+    "prereqs": "cs4400"
+  },
+  {
+    "id": "cs4452",
+    "name": "Human",
+    "credits": "3",
+    "prereqs": ""
+  },
+  {
+    "id": "cs4455",
+    "name": "Video Game Design",
+    "credits": "3",
+    "prereqs": "cs3451"
+  },
+  {
+    "id": "cs4460",
+    "name": "Intro Info Visualization",
+    "credits": "3",
+    "prereqs": "cs1332"
+  },
+  {
+    "id": "cs4464",
+    "name": "Computational Journalism",
+    "credits": "3",
+    "prereqs": "cs1331"
+  },
+  {
+    "id": "cs4470",
+    "name": "User Interface Software",
+    "credits": "3",
+    "prereqs": "cs2340*(cs3750+psyc3750)"
+  },
+  {
+    "id": "cs4472",
+    "name": "Design of Online Comm",
+    "credits": "3",
+    "prereqs": ""
+  },
+  {
+    "id": "cs4475",
+    "name": "Comp Photography",
+    "credits": "3",
+    "prereqs": "cs1301+cs1315+cs1371"
+  },
+  {
+    "id": "cs4476",
+    "name": "Intro to Computer Vision",
+    "credits": "3",
+    "prereqs": "(math2605+math2401+math24X1+math2411+math1553+math1X54+math1554+math1564)*((cs2110+cs2261)+(ece2020*ece2035))"
+  },
+  {
+    "id": "cs4480",
+    "name": "Digital Video Special FX",
+    "credits": "3",
+    "prereqs": "cs3451"
+  },
+  {
+    "id": "cs4495",
+    "name": "Computer Vision",
+    "credits": "3",
+    "prereqs": "(math2605+math2401+math24X1+math2411)*(cs2110+cs2261)"
+  },
+  {
+    "id": "cs4496",
+    "name": "Computer Animation",
+    "credits": "3",
+    "prereqs": "cs3451"
+  },
+  {
+    "id": "cs4497",
+    "name": "Comp Aesthetics",
+    "credits": "3",
+    "prereqs": "cs3451"
+  },
+  {
+    "id": "cs4510",
+    "name": "Automata and Complexity",
+    "credits": "3",
+    "prereqs": "(cs3510+cs3511)*(math3012+math3022)*(math3215+math3225+math3770+math3670+cee3770+isye3770+(isye2027*isye2028))+math3235"
+  },
+  {
+    "id": "cs4520",
+    "name": "Approximation Algs",
+    "credits": "3",
+    "prereqs": "cs4540"
+  },
+  {
+    "id": "cs4530",
+    "name": "Randomized Algs",
+    "credits": "3",
+    "prereqs": "cs4540"
+  },
+  {
+    "id": "cs4540",
+    "name": "Advanced Algs",
+    "credits": "3",
+    "prereqs": "(cs3510+cs3511)*(math3012+math3022)*(math3215+math3225+math3770+math3670+cee3770+isye3770+(isye2027*isye2028))+math3235"
+  },
+  {
+    "id": "cs4550",
+    "name": "Scientific Visualization",
+    "credits": "3",
+    "prereqs": "cs3451"
+  },
+  {
+    "id": "cs4560",
+    "name": "Verification of Systems",
+    "credits": "3",
+    "prereqs": "cs1050*cs3510"
+  },
+  {
+    "id": "cs4590",
+    "name": "Computer Audio",
+    "credits": "3",
+    "prereqs": ""
+  },
+  {
+    "id": "apph1040",
+    "name": "Sci Foundation of Health",
+    "credits": "2",
+    "prereqs": ""
+  },
+  {
+    "id": "apph1050",
+    "name": "Sci of Phys Act & Health",
+    "credits": "0",
+    "prereqs": ""
+  },
+  {
+    "id": "engl1101",
+    "name": "English Composition I",
+    "credits": "3",
+    "prereqs": ""
+  },
+  {
+    "id": "engl1102",
+    "name": "English Composition II",
+    "credits": "3",
+    "prereqs": "engl1101"
+  },
+  {
+    "id": "math1552",
+    "name": "Integral Calculus",
+    "credits": "3",
+    "prereqs": "math1550+math1551+math1501+math15X1+math1X51"
+  },
+  {
+    "id": "phys2211",
+    "name": "Intro Physics I",
+    "credits": "4",
+    "prereqs": "math1501+math1511+math1552"
+  },
+  {
+    "id": "math1551",
+    "name": "Differential Calculus",
+    "credits": "3",
+    "prereqs": ""
+  },
+  {
+    "id": "math1554",
+    "name": "Linear Algebra",
+    "credits": "4",
+    "prereqs": "math1113+math26+mathematics600+score620+math600+math1552+math15X2+math1X52+math1551"
+  },
+  {
+    "id": "math1564",
+    "name": "LinAlg w Abstract Vec Sp",
+    "credits": "4",
+    "prereqs": "ab5+bc5+math1552"
+  },
+  {
+    "id": "hist2111",
+    "name": "United States to 1877",
+    "credits": "3",
+    "prereqs": ""
+  },
+  {
+    "id": "hist2112",
+    "name": "United States since 1877",
+    "credits": "3",
+    "prereqs": ""
+  },
+  {
+    "id": "inta1200",
+    "name": "American Government",
+    "credits": "3",
+    "prereqs": ""
+  },
+  {
+    "id": "pol1101",
+    "name": "Government of the U.S.",
+    "credits": "3",
+    "prereqs": ""
+  },
+  {
+    "id": "pubp3000",
+    "name": "US Constitutional Issues",
+    "credits": "3",
+    "prereqs": ""
+  },
+  {
+    "id": "psyc1101",
+    "name": "General Psychology",
+    "credits": "3",
+    "prereqs": ""
+  },
+  {
+    "id": "math2550",
+    "name": "Intro Multivariable Calc",
+    "credits": "0",
+    "prereqs": "math1502+math1512+((math1552+math15X2+math1X52)*(math1553+math1X54+math1554+math1564+math1522+math1X53))"
+  },
+  {
+    "id": "math3406",
+    "name": "Second Course Linear Alg",
+    "credits": "3",
+    "prereqs": "math1502+math1512+math1522+math1553+math1X54+math1554+math1564+math1X53"
+  },
+  {
+    "id": "sls3110",
+    "name": "Tech and Sustain Community",
+    "credits": "3",
+    "prereqs": ""
+  },
+  {
+    "id": "math3406",
+    "name": "Second Course Linear Alg",
+    "credits": "3",
+    "prereqs": "math1502+math1512+math1522+math1553+math1X54+math1554+math1564+math1X53"
+  },
+  {
+    "id": "math4022",
+    "name": "Intro to Graph Theory",
+    "credits": "3",
+    "prereqs": "math3012+math3022"
+  },
+  {
+    "id": "math4032",
+    "name": "Combinatorial Analysis",
+    "credits": "3",
+    "prereqs": "math3012+math3022"
+  },
+  {
+    "id": "math4150",
+    "name": "Intro To Number Theory",
+    "credits": "3",
+    "prereqs": "math2106+cs3510+cs3511"
+  },
+  {
+    "id": "psyc3040",
+    "name": "Sensation & Perception",
+    "credits": "3",
+    "prereqs": "psyc1101"
+  },
+  {
+    "id": "math3012",
+    "name": "Applied Combinatorics",
+    "credits": "3",
+    "prereqs": "math1502+math1512+math1504+math1555+((math1552+math15X2+math1X52)*(math1553+math1554+math1564+math1522+math1X53))"
+  },
+  {
+    "id": "math3215",
+    "name": "Probability & Statistics",
+    "credits": "3",
+    "prereqs": "math2401+math2411+math24X1+math2605+math2551+math2561+math2550+math2X51"
+  },
+  {
+    "id": "math3670",
+    "name": "Statistics and Applns",
+    "credits": "3",
+    "prereqs": "math2401+math2411+math24X1+math2605+math2551+math2561+math2550+math2X51"
+  },
+  {
+    "id": "cee3770",
+    "name": "Statistics& Applications",
+    "credits": "3",
+    "prereqs": "math2401+math2411+math24X1+math2551+math2561+math2X51"
+  },
+  {
+    "id": "isye3770",
+    "name": "Statistics& Applications",
+    "credits": "3",
+    "prereqs": "math2401+math2411+math24X1+math2605+math2551+math2561+math2X51"
+  },
+  {
+    "id": "isye2027",
+    "name": "Probability With Apps",
+    "credits": "3",
+    "prereqs": "(math1502+math1512+(math15X2*math1522)+(math1552*math1553)+(math1X52*math1553))*(math2401+math2411+math24X1+math2551+math2561+math2X51)"
+  },
+  {
+    "id": "isye2028",
+    "name": "Basic Statistical Meth",
+    "credits": "3",
+    "prereqs": "isye2027*cs1301+cs1371"
+  },
+  {
+    "id": "hum1",
+    "name": "Humanities 1",
+    "credits": "3",
+    "prereqs": ""
+  },
+  {
+    "id": "hum2",
+    "name": "Humanities 2",
+    "credits": "3",
+    "prereqs": ""
+  },
+  {
+    "id": "lab1",
+    "name": "Lab Science 1",
+    "credits": "4",
+    "prereqs": ""
+  },
+  {
+    "id": "lab2",
+    "name": "Lab Science 2",
+    "credits": "4",
+    "prereqs": ""
+  },
+  {
+    "id": "jd1",
+    "name": "Junior Design 1",
+    "credits": "3",
+    "prereqs": "cs2340"
+  },
+  {
+    "id": "jd2",
+    "name": "Junior Design 2",
+    "credits": "3",
+    "prereqs": "jd1"
+  },
+  {
+    "id": "ss1",
+    "name": "Social Science 1",
+    "credits": "3",
+    "prereqs": ""
+  },
+  {
+    "id": "ss2",
+    "name": "Social Science 2",
+    "credits": "3",
+    "prereqs": ""
+  }
+]
+}

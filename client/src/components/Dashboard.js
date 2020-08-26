@@ -136,16 +136,19 @@ const Dashboard = () => {
           </IconButton>
         </Toolbar>
       </AppBar>
-      <Drawer
-      style={{"marginTop":"60px"}}
-        variant="permanent"
-        classes={{
-          paper: clsx(classes.drawerPaper, !open && classes.drawerPaperClose),
-        }}
-      >
-        <Divider />
-        <CourseList />
-      </Drawer>
+
+      
+        <Drawer
+        style={{"marginTop":"60px", "height":"100vh", "overflow":"auto"}}
+          variant="permanent"
+          classes={{
+            paper: clsx(classes.drawerPaper, !open && classes.drawerPaperClose),
+          }}
+        >
+          <Divider />
+          <CourseList />
+        </Drawer>
+
       <main className={classes.content}>
         <div className={classes.appBarSpacer} />
         <Container maxWidth="lg" className={classes.container}>
